@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" fill="none">
+  <rect x="2" y="6" width="52" height="52" rx="3" fill="#e6eee1"/>
+  <path d="M14 17h28v4H18v8h20v4H18v11h24v4H14V17Z" fill="#26483b"/>
+  <path d="M45 17h4v31h-4z" fill="#a95f3a"/>
+  <text x="65" y="35" fill="#f0f5eb" font-family="Manrope, Arial, sans-serif" font-size="27" font-weight="800" letter-spacing="2.2">EXIS</text>
+  <text x="67" y="51" fill="#c3d0ba" font-family="Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="3.2">ŽILINA</text>
+</svg>
