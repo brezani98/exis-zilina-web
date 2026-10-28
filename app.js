@@ -18,3 +18,15 @@ mainNav?.querySelectorAll('a').forEach((link) => {
 
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
+
+const webcamImage = document.querySelector('.webcam-image');
+if (webcamImage) {
+  const snapshotUrl = new URL(webcamImage.dataset.snapshotUrl);
+  const refreshWebcamSnapshot = () => {
+    snapshotUrl.searchParams.set('refresh', String(Math.floor(Date.now() / 120000)));
+    webcamImage.src = snapshotUrl.href;
+  };
+
+  refreshWebcamSnapshot();
+  window.setInterval(refreshWebcamSnapshot, 120000);
+}
