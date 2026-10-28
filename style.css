@@ -25,3 +25,20 @@
   .contact-details{grid-template-columns:1fr;gap:20px}
 }
 @media(max-width:380px){.product-card{min-height:144px;padding-inline:14px;column-gap:11px}}
+
+.webcam-section{display:grid;grid-template-columns:.8fr 1.2fr;align-items:center;gap:64px;padding-top:92px;padding-bottom:96px}
+.webcam-copy .eyebrow{margin-bottom:16px}
+.webcam-copy h2{font-size:clamp(36px,4vw,48px);margin-bottom:17px}
+.webcam-copy>p{max-width:410px;color:#697b6c;font-size:13px;line-height:1.8;margin-bottom:23px}
+.webcam-link{gap:20px}
+.webcam-link span{color:#a8c29b;font-size:17px}
+.webcam-preview{min-width:0;margin:0}
+.webcam-frame{position:relative;isolation:isolate;overflow:hidden;aspect-ratio:16/7;border:1px solid rgba(32,59,50,.08);border-radius:var(--radius-panel);background:#172c24;box-shadow:0 18px 48px rgba(32,59,50,.12)}
+.webcam-image{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transform:scaleY(3.9)}
+.webcam-badge{position:absolute;z-index:1;left:18px;top:17px;display:inline-flex;align-items:center;gap:8px;padding:9px 13px;border:1px solid rgba(32,59,50,.08);border-radius:999px;background:rgba(255,255,255,.92);color:#536a5c;font-size:9px;font-weight:700;letter-spacing:.09em}
+.webcam-dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(169,95,58,.13)}
+.webcam-preview figcaption{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:12px;color:#7b8a7b;font-size:10px}
+.webcam-preview figcaption a{color:#536a5c;font-weight:700;white-space:nowrap}
+.webcam-preview figcaption a:hover{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:950px){.webcam-section{grid-template-columns:1fr;gap:28px;padding-top:75px;padding-bottom:78px}.webcam-copy>p{max-width:560px}}
+@media(max-width:680px){.webcam-section{gap:22px;padding-top:62px;padding-bottom:66px}.webcam-copy h2{font-size:36px}.webcam-frame{aspect-ratio:16/8;border-radius:22px}.webcam-image{transform:scaleY(3.15)}.webcam-preview figcaption{font-size:9px;align-items:flex-start}.webcam-badge{left:12px;top:12px;padding:8px 10px;font-size:8px}}
